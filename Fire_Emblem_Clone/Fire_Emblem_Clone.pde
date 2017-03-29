@@ -7,7 +7,7 @@ map battlemap;
 void setup() {
   size(600, 600);
   battlemap = new map();
-  thisLevel = new mapDecoration("templatelevel.txt");
+  thisLevel = new mapDecoration("Levels/templatelevel.txt");
 }
 
 void draw() {

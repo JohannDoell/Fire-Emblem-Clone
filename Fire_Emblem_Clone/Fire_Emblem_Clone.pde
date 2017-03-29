@@ -1,15 +1,17 @@
 // Johann Doell
 // Fire Emblem clone
 
+mapDecoration thisLevel;
 map battlemap;
 
 void setup() {
   size(600, 600);
   battlemap = new map();
-  int [][] unitArray = new int[15][15];
-  int [][] tileArray = new int
+  thisLevel = new mapDecoration("templatelevel.txt");
 }
 
 void draw() {
-  battlemap.displayChessBoard();
+  background(255);
+  battlemap.displayBoard();
+  thisLevel.display();
 }

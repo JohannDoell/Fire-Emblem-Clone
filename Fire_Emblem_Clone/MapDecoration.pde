@@ -1,5 +1,6 @@
 class mapDecoration {
   mapTile[][] tiles;
+  
   int tilesHigh, tilesWide;
 
   mapDecoration(String fileToLoad) {

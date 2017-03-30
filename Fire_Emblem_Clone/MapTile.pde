@@ -17,12 +17,6 @@ class mapTile {
       theTile = loadImage("coin.png");
     } else if (tileType == 'B') {
       theTile = loadImage("boxItem.png");
-    } else if (tileType == 'F') {
-      theTile = loadImage("flyFly1.png");
-    } else if (tileType == 'P') {
-      theTile = loadImage("p1_front.png");
-    } else if (tileType == 'S') {
-      theTile = loadImage("slimeWalk1.png");
     } else {
       theTile = loadImage("empty.png");
     }

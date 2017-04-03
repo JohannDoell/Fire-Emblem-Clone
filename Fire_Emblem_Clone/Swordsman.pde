@@ -1,7 +1,8 @@
-class swordsman extends unit {
+class swordsman 
+//extends unit 
+{
 
   swordsman() {
-    super();
     x = 9;
     y = 2;
     unitArray[9][2] = 'I';
@@ -46,5 +47,20 @@ class swordsman extends unit {
       }
       unitArray[x-1][y-1] = 'I';
     }
+    if (direction == "East") {
+      unitArray[x-1][y-1] = ' ';
+      x = x + 1;
+      if (x < 1) {
+        x = 1;
+      }
+      unitArray[x-1][y-1] = 'I';
+    }
+    if (direction == "West") {
+      unitArray[x-1][y-1] = ' ';
+      x = x - 1;
+      if (x > 15) {
+        x = 15;
+      }
+      unitArray[x-1][y-1] = 'I';
+    }
   }
-}

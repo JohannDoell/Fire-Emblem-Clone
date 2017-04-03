@@ -7,7 +7,7 @@ map battlemap;
 char [][] unitArray;
 swordsman ike;
 String selectedUnit;
-
+mapTile[][] tiles;
 
 void setup() {
   size(600, 600);
@@ -16,6 +16,7 @@ void setup() {
   battlemap = new map();
   thisLevel = new mapDecoration("Levels/templatelevel.txt");
   ike = new swordsman();
+  ike.movesLeft = 3;
 }
 
 void draw() {
@@ -27,6 +28,12 @@ void draw() {
   }
 }
 
+void displayMoves() {
+  if (selectedUnit == "ike") {
+    println(ike.movesLeft);
+  }
+}
+
 void keyPressed() {
   if (key == 's') {
     if (selectedUnit == "ike") {
@@ -34,9 +41,19 @@ void keyPressed() {
     }
   }
   if (key == 'w') {
-   if (selectedUnit == "ike") {
-     ike.move("North");
-   }
+    if (selectedUnit == "ike") {
+      ike.move("North");
+    }
+  }
+  if (key == 'd') {
+    if (selectedUnit == "ike") {
+      ike.move("East");
+    }
+  }
+  if (key == 'a') {
+    if (selectedUnit == "ike") {
+      ike.move("West");
+    }
   }
 }
 

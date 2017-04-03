@@ -30,21 +30,39 @@ class swordsman extends unit {
   }
 
   void move(String direction) {
-    if (direction == "South") {
-      unitArray[x-1][y-1] = ' ';
-      y = y + 1;
-      if (y > 10) {
-        y = 10;
+    if (this.movesLeft > 0) {
+      if (direction == "South") {
+        unitArray[x-1][y-1] = ' ';
+        y = y + 1;
+        if (y > 10) {
+          y = 10;
+        }
+        unitArray[x-1][y-1] = 'I';
       }
-      unitArray[x-1][y-1] = 'I';
-    }
-    if (direction == "North") {
-      unitArray[x-1][y-1] = ' ';
-      y = y - 1;
-      if (y < 1) {
-        y = 1;
+      if (direction == "North") {
+        unitArray[x-1][y-1] = ' ';
+        y = y - 1;
+        if (y < 1) {
+          y = 1;
+        }
+        unitArray[x-1][y-1] = 'I';
       }
-      unitArray[x-1][y-1] = 'I';
+      if (direction == "East") {
+        unitArray[x-1][y-1] = ' ';
+        x = x + 1;
+        if (x > 15) {
+          x = 15;
+        }
+        unitArray[x-1][y-1] = 'I';
+      }
+      if (direction == "West") {
+        unitArray[x-1][y-1] = ' ';
+        x = x - 1;
+        if (x < 1) {
+          x = 1;
+        }
+        unitArray[x-1][y-1] = 'I';
+      }
     }
   }
 }

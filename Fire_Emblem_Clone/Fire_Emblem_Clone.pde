@@ -34,19 +34,9 @@ void keyPressed() {
     }
   }
   if (key == 'w') {
-    if (selectedUnit == "ike") {
-      ike.move("North");
-    }
-  }
-  if (key == 'd') {
-    if (selectedUnit == "ike") {
-      ike.move("East");
-    }
-  }
-  if (key == 'a') {
-    if (selectedUnit == "ike") {
-     ike.move("West"); 
-    }
+   if (selectedUnit == "ike") {
+     ike.move("North");
+   }
   }
 }
 

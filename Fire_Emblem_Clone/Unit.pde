@@ -1,4 +1,8 @@
-//class unit {
-//  int x, y;
-//
-//}
+class unit {
+  int x, y;
+  
+
+  unit() {
+    
+  }
+}

@@ -5,6 +5,7 @@ int state;
 mapDecoration thisLevel;
 map battlemap;
 char [][] unitArray;
+char [][] mapArray;
 swordsman ike;
 String selectedUnit;
 mapTile[][] tiles;
@@ -13,9 +14,10 @@ void setup() {
   size(600, 600);
   int state = 0;
   unitArray = new char[15][10];
+  mapArray = new char[15][10];
   battlemap = new map();
   thisLevel = new mapDecoration("Levels/templatelevel.txt");
-  ike = new swordsman();
+  ike = new swordsman("ike");
   ike.movesLeft = 3;
 }
 

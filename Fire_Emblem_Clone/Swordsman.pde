@@ -1,9 +1,10 @@
 class swordsman extends unit {
 
-  swordsman() {
+  swordsman(String _unitName) {
     super();
     x = 9;
     y = 2;
+    unitName = _unitName;
     unitArray[9][2] = 'I';
     println(unitArray[x-1][y-1]);
   }
@@ -20,8 +21,8 @@ class swordsman extends unit {
   void select() {
     if (mouseX > x*battlemap.cellSize-(battlemap.cellSize/2)-20 && mouseX < x*battlemap.cellSize-(battlemap.cellSize/2)+20) {
       if (mouseY > y*battlemap.cellSize-(battlemap.cellSize/2)-20 && mouseY < y*battlemap.cellSize-(battlemap.cellSize/2)+20) {
-        if (selectedUnit != "ike") {
-          selectedUnit = "ike";
+        if (selectedUnit != unitName) {
+          selectedUnit = unitName;
         } else {
           selectedUnit = "";
         }

@@ -3,9 +3,9 @@
 
 int state;
 mapDecoration thisLevel;
-map battlemap;
+_map battlemap;
+gameManager game1;
 char [][] unitArray;
-char [][] mapArray;
 swordsman ike;
 String selectedUnit;
 mapTile[][] tiles;
@@ -13,9 +13,9 @@ mapTile[][] tiles;
 void setup() {
   size(600, 600);
   int state = 0;
+  game1 = new gameManager();
   unitArray = new char[15][10];
-  mapArray = new char[15][10];
-  battlemap = new map();
+  battlemap = new _map();
   thisLevel = new mapDecoration("Levels/templatelevel.txt");
   ike = new swordsman("ike");
   ike.movesLeft = 3;
@@ -37,28 +37,9 @@ void displayMoves() {
 }
 
 void keyPressed() {
-  if (key == 's') {
-    if (selectedUnit == "ike") {
-      ike.move("South");
-    }
-  }
-  if (key == 'w') {
-    if (selectedUnit == "ike") {
-      ike.move("North");
-    }
-  }
-  if (key == 'd') {
-    if (selectedUnit == "ike") {
-      ike.move("East");
-    }
-  }
-  if (key == 'a') {
-    if (selectedUnit == "ike") {
-      ike.move("West");
-    }
-  }
+  game1.handleKeyPress();
 }
 
 void mousePressed() {
-  ike.select();
+  game1.handleClick();
 }

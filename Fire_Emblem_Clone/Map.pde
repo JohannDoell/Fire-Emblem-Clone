@@ -1,11 +1,11 @@
-class map {
+class _map {
 
   int rows, cols;
   float cellSize;
   boolean isFilledBlack;
   float theBorderSize;
 
-  map () {
+  _map() {
     rows = width/60;
     cols = height/40;
     theBorderSize = 15;

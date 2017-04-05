@@ -12,7 +12,7 @@ mapTile[][] tiles;
 
 void setup() {
   size(600, 600);
-  int state = 0;
+  state = 0;
   game1 = new gameManager();
   unitArray = new char[15][10];
   battlemap = new _map();

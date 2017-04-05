@@ -4,6 +4,12 @@ class gameManager {
   }
 
   void handleGameState() {
+    if (state == 0) {
+      background(255);
+      battlemap.displayBoard();
+      thisLevel.display();
+      ike.display();
+    }
   }
 
   void handleKeyPress() {

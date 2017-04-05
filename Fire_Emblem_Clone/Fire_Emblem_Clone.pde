@@ -22,18 +22,7 @@ void setup() {
 }
 
 void draw() {
-  if (state == 0) {
-    background(255);
-    battlemap.displayBoard();
-    thisLevel.display();
-    ike.display();
-  }
-}
-
-void displayMoves() {
-  if (selectedUnit == "ike") {
-    println(ike.movesLeft);
-  }
+  game1.handleGameState();
 }
 
 void keyPressed() {

@@ -6,18 +6,18 @@ class swordsman extends unit {
     y = 2;
     unitName = _unitName;
     unitArray[9][2] = 'I';
-    println(unitArray[x-1][y-1]);
+    println(unitArray[x][y]);
   }
 
   void move(String direction) {
     if (this.movesLeft > 0) {
       if (direction == "South") {
-        unitArray[x-1][y-1] = ' ';
+        unitArray[x][y] = ' ';
         y = y + 1;
         if (y > 10) {
           y = 10;
         }
-        unitArray[x-1][y-1] = 'I';
+        unitArray[x][y] = 'I';
       }
       if (direction == "North") {
         unitArray[x-1][y-1] = ' ';
@@ -25,7 +25,7 @@ class swordsman extends unit {
         if (y < 1) {
           y = 1;
         }
-        unitArray[x-1][y-1] = 'I';
+        unitArray[x][y] = 'I';
       }
       if (direction == "East") {
         unitArray[x-1][y-1] = ' ';
@@ -33,15 +33,15 @@ class swordsman extends unit {
         if (x > 15) {
           x = 15;
         }
-        unitArray[x-1][y-1] = 'I';
+        unitArray[x][y] = 'I';
       }
       if (direction == "West") {
-        unitArray[x-1][y-1] = ' ';
+        unitArray[x][y] = ' ';
         x = x - 1;
         if (x < 1) {
           x = 1;
         }
-        unitArray[x-1][y-1] = 'I';
+        unitArray[x][y] = 'I';
       }
     }
   }

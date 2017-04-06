@@ -15,6 +15,7 @@ class mapDecoration {
     for (int y = 0; y < tilesHigh; y++) {
       for (int x = 0; x < tilesWide; x++) {
         char tileType = lines[y].charAt(x);
+        unitArray[x][y] = tileType;
         tiles[x][y] = new mapTile(x*tileWidth, y*tileHeight, tileWidth, tileHeight, tileType);
       }
     }

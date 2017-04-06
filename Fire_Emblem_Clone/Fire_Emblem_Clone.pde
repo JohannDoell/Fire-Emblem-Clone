@@ -26,6 +26,7 @@ void draw() {
 }
 
 void keyPressed() {
+  
   game.handleKeyPress();
 }
 

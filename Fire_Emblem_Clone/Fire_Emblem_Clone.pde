@@ -4,7 +4,7 @@
 int state;
 mapDecoration thisLevel;
 _map battlemap;
-gameManager game1;
+gameManager game;
 char [][] unitArray;
 swordsman ike;
 String selectedUnit;
@@ -13,7 +13,7 @@ mapTile[][] tiles;
 void setup() {
   size(600, 600);
   state = 0;
-  game1 = new gameManager();
+  game = new gameManager();
   unitArray = new char[15][10];
   battlemap = new _map();
   thisLevel = new mapDecoration("Levels/templatelevel.txt");
@@ -22,13 +22,13 @@ void setup() {
 }
 
 void draw() {
-  game1.handleGameState();
+  game.handleGameState();
 }
 
 void keyPressed() {
-  game1.handleKeyPress();
+  game.handleKeyPress();
 }
 
 void mousePressed() {
-  game1.handleClick();
+  game.handleClick();
 }

@@ -14,7 +14,7 @@ void setup() {
   size(600, 600);
   state = 0;
   game = new gameManager();
-  unitArray = new char[15][10];
+  unitArray = new char[16][11];
   battlemap = new _map();
   thisLevel = new mapDecoration("Levels/templatelevel.txt");
   ike = new swordsman("ike");

@@ -12,6 +12,11 @@ class gameManager {
     }
   }
 
+  void createUnitArray(String fileToLoad) {
+    String lines[] = loadStrings(fileToLoad);
+    
+  }
+
   void handleKeyPress() {
     if (state == 0) {
       if (key == 's') {

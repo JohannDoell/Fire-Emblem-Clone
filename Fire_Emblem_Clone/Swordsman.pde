@@ -12,33 +12,25 @@ class swordsman extends unit {
       if (direction == "South") {
         resetArrayPos();
         y = y + 1;
-        if (y > 10) {
-          y = 10;
-        }
+        constrainUnitToMap();
         establishNewArrayPos();
       }
       if (direction == "North") {
         resetArrayPos(); 
         y = y - 1;
-        if (y < 1) {
-          y = 1;
-        }
+        constrainUnitToMap();
         establishNewArrayPos();
       }
       if (direction == "East") {
         resetArrayPos();
         x = x + 1;
-        if (x > 15) {
-          x = 15;
-        }
+        constrainUnitToMap();
         establishNewArrayPos();
       }
       if (direction == "West") {
         resetArrayPos(); 
         x = x - 1;
-        if (x < 1) {
-          x = 1;
-        }
+        constrainUnitToMap();
         establishNewArrayPos();
       }
     }

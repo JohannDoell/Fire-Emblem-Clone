@@ -38,4 +38,16 @@ class unit {
   void establishNewArrayPos() {
     unitArray[x][y] = unitSymbol;
   }
+
+  void constrainUnitToMap() {
+    if (y > 10) {
+      y = 10;
+    } else if (y < 1) {
+      y = 1;
+    } else if (x > 15) {
+      x = 15;
+    } else if (x < 1) {
+      x = 1;
+    }
+  }
 }

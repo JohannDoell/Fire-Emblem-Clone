@@ -17,7 +17,7 @@ void setup() {
   unitArray = new char[16][11];
   battlemap = new _map();
   thisLevel = new mapDecoration("Levels/templatelevel.txt");
-  ike = new swordsman("ike", 'I', 9, 2);
+  ike = new swordsman("ike", "foot", 'I', 9, 2);
   ike.movesLeft = 3;
 }
 

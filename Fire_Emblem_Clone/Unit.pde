@@ -1,13 +1,16 @@
 class unit {
   int x, y;
   int movesLeft;
-  String unitName;
+  String unitName, weaponType, movementType;
+  // Movement Types = "foot","fly","horse"
+  // Weapon Types = "sword","axe","lance" (Add more later)
   char unitSymbol;
 
-  unit(int _x, int _y, char _unitSymbol) {
+  unit(int _x, int _y, char _unitSymbol, String _movementType) {
     x = _x;
     y = _y;
     unitSymbol = _unitSymbol;
+    movementType = _movementType;
   }
 
   void display() {

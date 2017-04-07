@@ -7,6 +7,7 @@ _map battlemap;
 gameManager game;
 char [][] unitArray;
 swordsman ike;
+swordsman marth;
 String selectedUnit;
 mapTile[][] tiles;
 
@@ -18,7 +19,9 @@ void setup() {
   battlemap = new _map();
   thisLevel = new mapDecoration("Levels/templatelevel.txt");
   ike = new swordsman("ike", "foot", 'I', 9, 2);
+  marth = new swordsman("marth", "foot", 'i', 8, 2);
   ike.movesLeft = 3;
+  marth.movesLeft = 3;
 }
 
 void draw() {

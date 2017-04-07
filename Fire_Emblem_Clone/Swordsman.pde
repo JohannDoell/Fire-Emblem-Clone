@@ -4,7 +4,7 @@ class swordsman extends unit {
     super(_x, _y, _unitSymbol, _movementType);
     unitName = _unitName;
     weaponType = "sword";
-    unitArray[x][y] = 'I';
+    unitArray[x][y] = _unitSymbol;
     // println(unitArray[x][y]);
   }
 }

@@ -9,6 +9,7 @@ class gameManager {
       battlemap.displayBoard();
       thisLevel.display();
       ike.display();
+      marth.display();
     }
   }
 
@@ -16,6 +17,8 @@ class gameManager {
     if (state == 0) {
       if (checkSelection("ike")) {
         ike.move(getDesiredUnitDirection());
+      } else if (checkSelection("marth")) {
+        marth.move(getDesiredUnitDirection());
       }
     }
   }
@@ -23,6 +26,7 @@ class gameManager {
   void handleClick() {
     if (state == 0) {
       ike.select();
+      marth.select();
     }
   }
 

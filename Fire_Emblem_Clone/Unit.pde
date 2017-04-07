@@ -15,9 +15,9 @@ class unit {
 
   void display() {
     if (selectedUnit == unitName) {
-      fill(255);
-    } else {
       fill(0);
+    } else {
+      fill(255);
     }
     ellipse(x*battlemap.cellSize-(battlemap.cellSize/2), y*battlemap.cellSize-(battlemap.cellSize/2), 20, 20);
   }
@@ -72,5 +72,9 @@ class unit {
     } else if (x < 1) {
       x = 1;
     }
+  }
+  
+  boolean checkIfMovementIsPossible(_direction) {
+    
   }
 }

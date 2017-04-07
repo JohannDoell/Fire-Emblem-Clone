@@ -14,25 +14,8 @@ class gameManager {
 
   void handleKeyPress() {
     if (state == 0) {
-      if (key == 's') {
-        if (checkSelection("ike")) {
-          ike.move("South");
-        }
-      }
-      if (key == 'w') {
-        if (checkSelection("ike")) {
-          ike.move("North");
-        }
-      }
-      if (key == 'd') {
-        if (checkSelection("ike")) {
-          ike.move("East");
-        }
-      }
-      if (key == 'a') {
-        if (checkSelection("ike")) {
-          ike.move("West");
-        }
+      if (checkSelection("ike")) {
+        ike.move(getDesiredUnitDirection());
       }
     }
   }
@@ -42,12 +25,26 @@ class gameManager {
       ike.select();
     }
   }
-  
-  boolean checkSelection(String characterToCheckFor){
+
+  boolean checkSelection(String characterToCheckFor) {
     if (selectedUnit == characterToCheckFor) {
-     return true; 
+      return true;
     } else {
-     return false; 
+      return false;
+    }
+  }
+
+  String getDesiredUnitDirection() {
+    if (key == 'w') {
+      return "North";
+    } else if (key == 'a') {
+      return "West";
+    } else if (key == 's') {
+      return "South";
+    } else if (key == 'd') {
+      return "East";
+    } else {
+      return "NoDirection";
     }
   }
 }

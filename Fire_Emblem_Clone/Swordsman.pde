@@ -7,24 +7,4 @@ class swordsman extends unit {
     unitArray[x][y] = 'I';
     // println(unitArray[x][y]);
   }
-
-  void move(String direction) {
-    if (this.movesLeft > 0) {
-      resetArrayPos(); 
-      if (direction == "South") {
-        y = y + 1;
-      }
-      if (direction == "North") {
-        y = y - 1;
-      }
-      if (direction == "East") {
-        x = x + 1;
-      }
-      if (direction == "West") {
-        x = x - 1;
-      }
-      constrainUnitToMap();
-      establishNewArrayPos();
-    }
-  }
 }

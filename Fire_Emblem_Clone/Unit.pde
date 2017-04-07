@@ -2,8 +2,12 @@ class unit {
   int x, y;
   int movesLeft;
   String unitName;
+  char unitSymbol;
 
-  unit() {
+  unit(int _x, int _y, char _unitSymbol) {
+    x = _x;
+    y = _y;
+    unitSymbol = _unitSymbol;
   }
 
   void display() {
@@ -25,5 +29,13 @@ class unit {
         }
       }
     }
+  }
+
+  void resetArrayPos() {
+    unitArray[x][y] = ' ';
+  }
+
+  void establishNewArrayPos() {
+    unitArray[x][y] = unitSymbol;
   }
 }

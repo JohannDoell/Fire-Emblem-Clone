@@ -1,47 +1,45 @@
 class swordsman extends unit {
 
-  swordsman(String _unitName) {
-    super();
-    x = 9;
-    y = 2;
+  swordsman(String _unitName, char _unitSymbol, int _x, int _y) {
+    super(_x, _y, _unitSymbol);
     unitName = _unitName;
-    unitArray[9][2] = 'I';
+    unitArray[x][y] = 'I';
     println(unitArray[x][y]);
   }
 
   void move(String direction) {
     if (this.movesLeft > 0) {
       if (direction == "South") {
-        unitArray[x][y] = ' ';
+        resetArrayPos();
         y = y + 1;
         if (y > 10) {
           y = 10;
         }
-        unitArray[x][y] = 'I';
+        establishNewArrayPos();
       }
       if (direction == "North") {
-        unitArray[x-1][y-1] = ' ';
+        resetArrayPos(); 
         y = y - 1;
         if (y < 1) {
           y = 1;
         }
-        unitArray[x][y] = 'I';
+        establishNewArrayPos();
       }
       if (direction == "East") {
-        unitArray[x-1][y-1] = ' ';
+        resetArrayPos();
         x = x + 1;
         if (x > 15) {
           x = 15;
         }
-        unitArray[x][y] = 'I';
+        establishNewArrayPos();
       }
       if (direction == "West") {
-        unitArray[x][y] = ' ';
+        resetArrayPos(); 
         x = x - 1;
         if (x < 1) {
           x = 1;
         }
-        unitArray[x][y] = 'I';
+        establishNewArrayPos();
       }
     }
   }

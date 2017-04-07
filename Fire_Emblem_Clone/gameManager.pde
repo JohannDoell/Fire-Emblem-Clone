@@ -15,22 +15,22 @@ class gameManager {
   void handleKeyPress() {
     if (state == 0) {
       if (key == 's') {
-        if (selectedUnit == "ike") {
+        if (checkSelection("ike")) {
           ike.move("South");
         }
       }
       if (key == 'w') {
-        if (selectedUnit == "ike") {
+        if (checkSelection("ike")) {
           ike.move("North");
         }
       }
       if (key == 'd') {
-        if (selectedUnit == "ike") {
+        if (checkSelection("ike")) {
           ike.move("East");
         }
       }
       if (key == 'a') {
-        if (selectedUnit == "ike") {
+        if (checkSelection("ike")) {
           ike.move("West");
         }
       }
@@ -40,6 +40,14 @@ class gameManager {
   void handleClick() {
     if (state == 0) {
       ike.select();
+    }
+  }
+  
+  boolean checkSelection(String characterToCheckFor){
+    if (selectedUnit == characterToCheckFor) {
+     return true; 
+    } else {
+     return false; 
     }
   }
 }

@@ -5,35 +5,26 @@ class swordsman extends unit {
     unitName = _unitName;
     weaponType = "sword";
     unitArray[x][y] = 'I';
-    println(unitArray[x][y]);
+    // println(unitArray[x][y]);
   }
 
   void move(String direction) {
     if (this.movesLeft > 0) {
+      resetArrayPos(); 
       if (direction == "South") {
-        resetArrayPos();
         y = y + 1;
-        constrainUnitToMap();
-        establishNewArrayPos();
       }
       if (direction == "North") {
-        resetArrayPos(); 
         y = y - 1;
-        constrainUnitToMap();
-        establishNewArrayPos();
       }
       if (direction == "East") {
-        resetArrayPos();
         x = x + 1;
-        constrainUnitToMap();
-        establishNewArrayPos();
       }
       if (direction == "West") {
-        resetArrayPos(); 
         x = x - 1;
-        constrainUnitToMap();
-        establishNewArrayPos();
       }
+      constrainUnitToMap();
+      establishNewArrayPos();
     }
   }
 }

@@ -1,4 +1,32 @@
 Major Project Proposal for Computer Science 30
 
-To be filled in this week....
+I am going to continue making the Fire Emblem clone that I was making
+as a final project. I think this is much more challenging than my 
+original idea of making a sort of mobile runner game-esque project, 
+but not too challenging that I'd never be able to do it. I'll use 
+Processing.
 
+Needs
+	- A basic movement system. (May 1st to May 11th)
+		- Units cannot enter non-enterable terrain. (example: mountains, other units)
+		- Units can only move a limited number of squares
+	- A basic combat system. (May 13th to May 17th + May 19th to May 24th)
+		- Select a unit and make an attack action to another unit.
+	- Player vs. Player (May 25th to May 31st)
+		- Turn system
+
+(I'll reevaluate times once I'm done these three)
+
+Wants
+	- A combat system that incorporates elements of Fire Emblem's actual combat system.
+		- So, a more complex combat system.
+		- Takes offensive and defensive variables into consideration
+		- Differing unit types.
+	- Basic AI
+	- Saving and loading by and to file.
+	- More advanced movement system
+		- Certain units can move into normally non-enterable terrain.
+
+Pipe Dreams
+	- Units that level up like an RPG
+	- Different gameplay modes like story mode, challenge mode, etc.

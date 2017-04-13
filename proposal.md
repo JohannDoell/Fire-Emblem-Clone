@@ -16,9 +16,7 @@ Processing and probably the minim sound library.
 		- [ ] Select a unit and make an attack action to another unit.
 	- [ ] Player vs. Player (Week 5)
 		- [ ] Turn system
-
-(I'll clean up and comment the codes after this and then reevaluate times)
-(But I'll put some difficulty markers for the wants)
+	- [ ] Code Clean Up (After Everything Else)
 
 ## Wants
 	- A combat system that incorporates elements of Fire Emblem's actual combat system. (Moderate)

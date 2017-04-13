@@ -10,8 +10,8 @@ than creating original ideas, which would streamline the process
 a lot more.
 
 ## Needs
-	- [x] Map system (Already have)
-	- [x] Unit management system (Already have)
+	- [x] Map system
+	- [x] Unit management system
 	- [ ] A basic movement system. (Week 1-2)
 		- [ ] Units cannot enter non-enterable terrain. (example: mountains, other units)
 		- [ ] Units can only move a limited number of squares

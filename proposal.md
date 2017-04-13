@@ -22,20 +22,20 @@ a lot more.
 - [ ] Code Clean Up (After Everything Else)
 
 ## Wants
-	- A combat system that incorporates elements of Fire Emblem's actual combat system. (Moderate)
-		- So, a more complex combat system.
-		- Takes offensive and defensive variables into consideration
-		- Lots of stats
-		- Abilities, weapon types.
-		- Differing unit types.
-	- Basic AI (Lengthy)
-	- Saving and loading by and to file. (Quick/Moderate)
-	- More advanced movement system (Moderate)
-		- Certain units can move into normally non-enterable terrain.
-	- Graphics that aren't placeholders. Most likely assets from the games. (Quick/Moderate)
-		- Would most likely just be spent trying to find the right files online.
+- A combat system that incorporates elements of Fire Emblem's actual combat system. (Moderate)
+	- So, a more complex combat system.
+	- Takes offensive and defensive variables into consideration
+	- Lots of stats
+	- Abilities, weapon types.
+	- Differing unit types.
+- Basic AI (Lengthy)
+- Saving and loading by and to file. (Quick/Moderate)
+- More advanced movement system (Moderate)
+	- Certain units can move into normally non-enterable terrain.
+- Graphics that aren't placeholders. Most likely assets from the games. (Quick/Moderate)
+	- Would most likely just be spent trying to find the right files online.
 
 ## Pipe Dreams
-	- Units that level up like an RPG
-	- Different gameplay modes like story mode, challenge mode, etc.
-	- Online multiplayer
+- Units that level up like an RPG
+- Different gameplay modes like story mode, challenge mode, etc.
+- Online multiplayer

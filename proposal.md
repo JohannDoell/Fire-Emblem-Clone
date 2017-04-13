@@ -1,4 +1,4 @@
-Major Project Proposal for Computer Science 30
+# Major Project Proposal for Computer Science 30
 
 I am going to continue making the Fire Emblem clone that I was making
 as a final project. I think this is much more challenging than my 
@@ -6,7 +6,7 @@ original idea of making a sort of mobile runner game-esque project,
 but not too challenging that I'd never be able to do it. I'll use 
 Processing and probably the minim sound library.
 
-Needs
+## Needs
 	- Map system (Already have)
 	- Unit management system (Already have)
 	- A basic movement system. (Week 1-2)
@@ -20,7 +20,7 @@ Needs
 (I'll clean up and comment the codes after this and then reevaluate times)
 (But I'll put some difficulty markers for the wants)
 
-Wants
+## Wants
 	- A combat system that incorporates elements of Fire Emblem's actual combat system. (Moderate)
 		- So, a more complex combat system.
 		- Takes offensive and defensive variables into consideration
@@ -34,7 +34,7 @@ Wants
 	- Graphics that aren't placeholders. Most likely assets from the games. (Quick/Moderate)
 		- Would most likely just be spent trying to find the right files online.
 
-Pipe Dreams
+## Pipe Dreams
 	- Units that level up like an RPG
 	- Different gameplay modes like story mode, challenge mode, etc.
 	- Online multiplayer

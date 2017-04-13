@@ -6,7 +6,7 @@ original idea of making a sort of mobile runner game-esque project,
 but not too challenging that I'd never be able to do it. I'll use 
 Processing and probably the minim sound library. As a clone, most
 of this will be simply figuring out how to implement ideas, rather
-than creating original ideas, which would streamline the process
+than creating original ideas, which will streamline the process
 a lot more.
 
 ## Needs

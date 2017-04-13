@@ -10,16 +10,16 @@ than creating original ideas, which would streamline the process
 a lot more.
 
 ## Needs
-	- [x] Map system
-	- [x] Unit management system
-	- [ ] A basic movement system. (Week 1-2)
-		- [ ] Units cannot enter non-enterable terrain. (example: mountains, other units)
-		- [ ] Units can only move a limited number of squares
-	- [ ] A basic combat system. (Week 3-4)
-		- [ ] Select a unit and make an attack action to another unit.
-	- [ ] Player vs. Player (Week 5)
-		- [ ] Turn system
-	- [ ] Code Clean Up (After Everything Else)
+- [x] Map system
+- [x] Unit management system
+- [ ] A basic movement system. (Week 1-2)
+	- Units cannot enter non-enterable terrain. (example: mountains, other units)
+	- Units can only move a limited number of squares
+- [ ] A basic combat system. (Week 3-4)
+	- Select a unit and make an attack action to another unit.
+- [ ] Player vs. Player (Week 5)
+	- Turn system
+- [ ] Code Clean Up (After Everything Else)
 
 ## Wants
 	- A combat system that incorporates elements of Fire Emblem's actual combat system. (Moderate)

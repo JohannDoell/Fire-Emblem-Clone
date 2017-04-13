@@ -7,15 +7,15 @@ but not too challenging that I'd never be able to do it. I'll use
 Processing and probably the minim sound library.
 
 ## Needs
-	- Map system (Already have)
-	- Unit management system (Already have)
-	- A basic movement system. (Week 1-2)
-		- Units cannot enter non-enterable terrain. (example: mountains, other units)
-		- Units can only move a limited number of squares
-	- A basic combat system. (Week 3-4)
-		- Select a unit and make an attack action to another unit.
-	- Player vs. Player (Week 5)
-		- Turn system
+	- [x] Map system (Already have)
+	- [x] Unit management system (Already have)
+	- [ ] A basic movement system. (Week 1-2)
+		- [ ] Units cannot enter non-enterable terrain. (example: mountains, other units)
+		- [ ] Units can only move a limited number of squares
+	- [ ] A basic combat system. (Week 3-4)
+		- [ ] Select a unit and make an attack action to another unit.
+	- [ ] Player vs. Player (Week 5)
+		- [ ] Turn system
 
 (I'll clean up and comment the codes after this and then reevaluate times)
 (But I'll put some difficulty markers for the wants)

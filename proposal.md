@@ -9,6 +9,9 @@ of this will be simply figuring out how to implement ideas, rather
 than creating original ideas, which will streamline the process
 a lot more.
 
+I've put a basic timeline for the first phase. After that's done, I'll
+evaluate the "Wants" section and see how much time I have left for what.
+
 ## Needs
 - [x] Map system
 - [x] Unit management system
